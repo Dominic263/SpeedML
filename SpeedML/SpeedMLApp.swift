@@ -11,7 +11,7 @@ import SwiftUI
 struct SpeedMLApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppView()
         }
     }
 }

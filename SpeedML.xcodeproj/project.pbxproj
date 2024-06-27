@@ -14,6 +14,10 @@
 		498381B32C2DE4260088083C /* SpeedMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498381B22C2DE4260088083C /* SpeedMLTests.swift */; };
 		498381BD2C2DE4260088083C /* SpeedMLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498381BC2C2DE4260088083C /* SpeedMLUITests.swift */; };
 		498381BF2C2DE4260088083C /* SpeedMLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498381BE2C2DE4260088083C /* SpeedMLUITestsLaunchTests.swift */; };
+		498381CE2C2DE54B0088083C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498381CD2C2DE54B0088083C /* LaunchScreen.storyboard */; };
+		498381D22C2DE7B30088083C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 498381D12C2DE7B30088083C /* ComposableArchitecture */; };
+		498381DB2C2DF9110088083C /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 498381DA2C2DF9110088083C /* NIO */; };
+		498381DE2C2DF9240088083C /* MQTTNIO in Frameworks */ = {isa = PBXBuildFile; productRef = 498381DD2C2DF9240088083C /* MQTTNIO */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,8 @@
 		498381B82C2DE4260088083C /* SpeedMLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedMLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		498381BC2C2DE4260088083C /* SpeedMLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedMLUITests.swift; sourceTree = "<group>"; };
 		498381BE2C2DE4260088083C /* SpeedMLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedMLUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		498381CD2C2DE54B0088083C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		498381CF2C2DE7490088083C /* speed-ml */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "speed-ml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498381DE2C2DF9240088083C /* MQTTNIO in Frameworks */,
+				498381D22C2DE7B30088083C /* ComposableArchitecture in Frameworks */,
+				498381DB2C2DF9110088083C /* NIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,7 @@
 		498381952C2DE4240088083C = {
 			isa = PBXGroup;
 			children = (
+				498381CF2C2DE7490088083C /* speed-ml */,
 				498381A02C2DE4240088083C /* SpeedML */,
 				498381B12C2DE4260088083C /* SpeedMLTests */,
 				498381BB2C2DE4260088083C /* SpeedMLUITests */,
@@ -105,6 +115,7 @@
 		498381A72C2DE4250088083C /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				498381CD2C2DE54B0088083C /* LaunchScreen.storyboard */,
 				498381A82C2DE4250088083C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -143,6 +154,11 @@
 			dependencies = (
 			);
 			name = SpeedML;
+			packageProductDependencies = (
+				498381D12C2DE7B30088083C /* ComposableArchitecture */,
+				498381DA2C2DF9110088083C /* NIO */,
+				498381DD2C2DF9240088083C /* MQTTNIO */,
+			);
 			productName = SpeedML;
 			productReference = 4983819E2C2DE4240088083C /* SpeedML.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +231,11 @@
 				Base,
 			);
 			mainGroup = 498381952C2DE4240088083C;
+			packageReferences = (
+				498381D02C2DE7B30088083C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				498381D92C2DF9110088083C /* XCRemoteSwiftPackageReference "swift-nio" */,
+				498381DC2C2DF9240088083C /* XCRemoteSwiftPackageReference "mqtt-nio" */,
+			);
 			productRefGroup = 4983819F2C2DE4240088083C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498381CE2C2DE54B0088083C /* LaunchScreen.storyboard in Resources */,
 				498381A92C2DE4250088083C /* Preview Assets.xcassets in Resources */,
 				498381A62C2DE4250088083C /* Assets.xcassets in Resources */,
 			);
@@ -428,6 +450,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -457,6 +480,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -588,6 +612,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		498381D02C2DE7B30088083C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.11.2;
+			};
+		};
+		498381D92C2DF9110088083C /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.67.0;
+			};
+		};
+		498381DC2C2DF9240088083C /* XCRemoteSwiftPackageReference "mqtt-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-server-community/mqtt-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		498381D12C2DE7B30088083C /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 498381D02C2DE7B30088083C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		498381DA2C2DF9110088083C /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 498381D92C2DF9110088083C /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+		498381DD2C2DF9240088083C /* MQTTNIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 498381DC2C2DF9240088083C /* XCRemoteSwiftPackageReference "mqtt-nio" */;
+			productName = MQTTNIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 498381962C2DE4240088083C /* Project object */;
 }
