@@ -1,5 +1,5 @@
 {
-  "originHash" : "7acb8908bcbc0f40cc3c63409d171eac303055388106cfc36291ac0f5b2d5e01",
+  "originHash" : "de7769947831fa3f4bec8db381c89054202ba935b305b6037e5e9ff5527fac6f",
   "pins" : [
     {
       "identity" : "combine-schedulers",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/swift-server-community/mqtt-nio.git",
       "state" : {
-        "revision" : "267b83ab5690d463ff00585a4fd6dc54b698e1d2",
-        "version" : "2.11.0"
+        "branch" : "main",
+        "revision" : "b56887ad83206c546d2415c5f255d74b255d160e"
       }
     },
     {
@@ -60,8 +60,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-composable-architecture",
       "state" : {
-        "revision" : "1f952d8c69ace5e53bb69a218e6ed00e03a4695c",
-        "version" : "1.11.2"
+        "branch" : "main",
+        "revision" : "4880ed6a7c98444b568dd4e8ae31a210aa91f178"
       }
     },
     {
@@ -114,8 +114,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-nio.git",
       "state" : {
-        "revision" : "e5a216ba89deba84356bad9d4c2eab99071c745b",
-        "version" : "2.67.0"
+        "branch" : "main",
+        "revision" : "304a238b09a3daae081e53470e8df9a4dc84e0ba"
       }
     },
     {
